@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brawl Stars Fanpage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #0d47a1;
+            color: #ffeb3b;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+        h1 {
+            font-size: 5vw;
+            text-shadow: 2px 2px 5px #000;
+            position: relative;
+            z-index: 2;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2vw;
+            margin-top: 2vw;
+            position: relative;
+            z-index: 2;
+            flex-wrap: wrap;
+            width: 80%;
+        }
+        img {
+            width: 40vw;
+            height: auto;
+            max-width: 300px;
+            border: 0.5vw solid #ffeb3b;
+            border-radius: 15px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+        }
+        .phrase {
+            font-size: 3vw;
+            margin-top: 2vw;
+            font-weight: bold;
+            background-color: #ff5722;
+            padding: 1vw;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 2;
+        }
+        .emojis {
+            font-size: 4vw;
+            margin-top: 1vw;
+            position: relative;
+            z-index: 2;
+        }
+        .background-emojis {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            font-size: 3vw;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+            justify-content: center;
+            align-items: center;
+            pointer-events: none;
+            opacity: 0.5;
+        }
+        .background-emojis span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .buttons {
+            margin-top: 2vw;
+        }
+        .buttons button {
+            font-size: 2vw;
+            padding: 1vw 2vw;
+            margin: 1vw;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: #ffeb3b;
+            color: #000;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        .buttons button:hover {
+            background-color: #ffd600;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 7vw; }
+            .phrase { font-size: 5vw; }
+            .emojis { font-size: 6vw; }
+            img { width: 80%; }
+            .buttons button { font-size: 4vw; padding: 2vw 4vw; }
+        }
+    </style>
+    <script>
+        function respostaSim() {
+            alert("Ótimo! Vamos jogar Brawl Stars agora!");
+        }
+        function respostaNao() {
+            alert("Que pena! Quem sabe outra hora!");
+        }
+    </script>
+</head>
+<body>
+    <div class="background-emojis">
+        <script>
+            for (let i = 0; i < 100; i++) {
+                document.write('<span>🎮💥🔥⭐</span>');
+            }
+        </script>
+    </div>
+    <h1>🔥 Brawl Stars Fanpage 🔥</h1>
+    <div class="container">
+        <img src="./OIP (1).jpeg" alt="Imagem do Brawl Stars">
+        <img src="./OIP.jpeg" alt="Imagem do Brawl Stars">
+    </div>
+    <div class="phrase">⚡ Vamos jogar Brawl Star Liliann KKKKK ⚡</div>
+    <div class="emojis">🎮💥🔥⭐</div>
+    <div class="buttons">
+        <button onclick="respostaSim()">Sim</button>
+        <button onclick="respostaNao()">Não</button>
+    </div>
+</body>
+</html>
